@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="calc">
+        <input id="display" readonly>
+        <div id="keys">
+            <button id="symbol" onclick="appendtodisplay('7')">7</button>
+            <button onclick="appendtodisplay('8')">8</button>
+            <button onclick="appendtodisplay('9')">9</button>
+            <button id="symbol" onclick="appendtodisplay('/')">/</button>
+            <button onclick="appendtodisplay('4')">4</button>
+            <button onclick="appendtodisplay('5')">5</button>
+            <button onclick="appendtodisplay('6')">6</button>
+            <button id="symbol" onclick="appendtodisplay('*')">*</button>
+            <button onclick="appendtodisplay('1')">1</button>
+            <button onclick="appendtodisplay('2')">2</button>
+            <button onclick="appendtodisplay('3')">3</button>
+            <button id="symbol" onclick="appendtodisplay('-')">-</button>
+            <button onclick="appendtodisplay('0')">0</button>
+            <button onclick="appendtodisplay('.')">.</button> 
+            <button id="bracket" onclick="appendtodisplay('(')"><h2>(</h2></button>
+            <button id="bracket" onclick="appendtodisplay(')')"><h2>)</h2></button>
+            <button style="background-color:rgb(166, 1, 1);" onclick="clearall()">C</button>
+            <button id="blocked" disabled>off</button>
+            <button id="bracket" onclick="backspace()">undo</button>
+            <button style="background-color: rgb(5, 161, 21); color:black" onclick="calculate()">=</button>
+            <!-- <button id="blocked" disabled>off</button>
+            <button id="blocked" disabled>off</button>
+            <button id="blocked" disabled>off</button>
+            <button id="blocked" disabled>off</button> -->
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
